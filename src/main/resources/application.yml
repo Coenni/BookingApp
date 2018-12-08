@@ -1,0 +1,29 @@
+spring:
+    application:
+        name: OutfitteryBooking
+    profiles:
+        active: dev
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+        url: jdbc:h2:mem:booking_dev_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+        username: sa
+        password:
+        hikari:
+            auto-commit: false
+    h2:
+        console:
+            enabled: true
+    jpa:
+        database: H2
+        show-sql: false
+        properties:
+            hibernate.id.new_generator_mappings: true
+            hibernate.connection.provider_disables_autocommit: true
+            hibernate.cache.use_second_level_cache: true
+            hibernate.cache.use_query_cache: false
+            hibernate.generate_statistics: true
+
+appointment:
+  startHour: 1
+  duration: 30
+  perDay: 16
