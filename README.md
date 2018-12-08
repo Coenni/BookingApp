@@ -1,4 +1,4 @@
-#Stylist Booking Application Model
+# Stylist Booking Application Model
 
 *Swagger for EndPoint/Model/Dto Documentation*
 
@@ -6,6 +6,7 @@
 http://localhost:8080/swagger-ui.html
 
 Sample Queries, also Postman with request body JSON(application/json) for POST queries
+
 ```curl --header "Content-Type: application/json"  --request POST  --data '{"customerName":"JohnDoe"}'  http://localhost:8080/api/customer```
 
 ```curl -i -H "Accept: application/json" "localhost:8080/api/customer"```
@@ -19,7 +20,7 @@ Sample Queries, also Postman with request body JSON(application/json) for POST q
 
 ```curl  --header "Content-Type: application/json"  --request POST  --data '{"customerId":1,"timeSlotPK":{"slotIndex":0,"date":[2018,12,8]}}' http://localhost:8080/api/makeAppointment```
 
-#Instructions
+# Instructions
 - For building:
 ```mvn clean package``` || ```mvnw clean package``` (can be with ```-DskipTests```)
 
